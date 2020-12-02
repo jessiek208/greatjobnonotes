@@ -1,0 +1,178 @@
+/* Table of Contents:
+1. Basic Color Design and Fonts
+2. Header Details
+3. Footer Details
+4. Link Formatting
+5. Mobile Formatting for Header and Footer
+
+
+1. Basic Color Design, Button and Fonts*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0; 
+    outline: 0;
+  }
+
+body {
+    background-color: #E5E1DC;
+    color: black;
+    font-size: 16px;
+    font-family: "Heebo", Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #06377a;
+    margin: 0px auto;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+button{
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-family: "Heebo", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background: #CC7A08;
+    color: white;
+}
+
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    word-spacing: 1px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-optical-sizing: auto;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+p {
+    font-optical-sizing: auto;
+    color: #292929;
+    font-size: 1rem;
+}
+
+q{
+    font-style: italic;
+    color: #292929;
+    font-optical-sizing: auto;
+}
+
+/* 2. Universal Site Header Details */
+
+nav .header-nav {
+    list-style: none;
+    text-align: center;
+    margin: 20px auto;
+    padding-bottom: 20px;
+}
+
+nav li{
+    display: inline;
+    padding: 0px 50px;
+    margin: 20px auto; 
+}
+
+.show-name {
+    font-family: "Syne Mono", monospace;
+    font-size: 4rem;
+    text-decoration: none;
+}
+
+.tag-line {
+    font-family: "Permanent Marker", serif;
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
+
+/* 3. Footer Details */
+
+footer {
+    background-color: #456EA8;
+    color: white;
+    width: 100%;
+    padding: 20px 0;   
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.created-by {
+    font-size: .75rem;
+}
+
+.contact-button {
+    background: #CC7A08;
+    color: white;
+}
+
+/* 4. Link Formatting */
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
+
+.sidebar a {
+    color: #456EA8;
+}
+
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: wavy underline white;
+}
+
+.sidebar a:hover {
+    text-decoration: wavy underline black;
+}
+
+article a {
+    color: #06377a;
+}
+
+article a:visited {
+    color: #456EA8;
+}
+
+/* 5. Mobile Formatting for Header and Footer */
+
+@media (max-width: 600px){
+    .tag-line {
+        font-family: "Permanent Marker", serif;
+        font-size: 2em;
+        padding-bottom: 5px;
+    }
+    nav li{
+        display: block;
+        padding: 0px 50px;
+        margin: 20px auto; 
+    }
+    
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        align-items: center; 
+    }
+}

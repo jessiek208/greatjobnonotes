@@ -1,0 +1,118 @@
+/* Table of Contents
+
+1. Mobile/Medium Screens
+2. Regular Screens
+3. Grid Component Styling and Assignment
+4. Article Styling for Blog Posts
+
+
+1. Mobile & Med Screens */
+@media (max-width: 900px){
+
+    .body-grid{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "hd"
+        "cc"
+        "sb"
+        "ft";
+        align-items: stretch;
+        justify-items: stretch;
+        justify-content: stretch;
+    }
+
+    .sidebar {
+        max-height: 200px;
+        overflow-y: auto;
+        text-align: center;
+    }
+}
+
+/* 2. Regular Screen */
+@media (min-width: 901px){
+
+    .body-grid{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: (1fr, 1fr, 1fr);
+        grid-template-areas:
+        "hd hd hd"
+        "cc cc sb"
+        "ft ft ft";
+        align-items: stretch;
+        justify-items: stretch;
+        justify-content: stretch;
+    }
+}
+
+/* 3. Grid Components */
+header{
+    grid-area: hd;
+}
+
+.content-container{
+    grid-area: cc;
+    padding: 20px 20px;
+}
+
+.sidebar{
+    grid-area: sb;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    overflow-y: auto;
+}
+
+.footer-container{
+    grid-area: ft;
+}
+
+/* 4. Article Styling for Blog Posts*/
+.blog-author {
+    display: flex;
+    flex-direction: row;
+}
+
+.blog-author figure {
+    width: 20%;
+}
+
+.blog-author p {
+    font-size: .75rem;
+    width: 70%;
+}
+
+
+.post-format{
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure img {
+    width: 85%;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: .75rem;
+    width: 80%;
+    text-align: center;
+}
+
+.two-image-gallery {
+    display: flex;
+    flex-direction: row;
+}

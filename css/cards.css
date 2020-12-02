@@ -1,0 +1,101 @@
+
+/*Mobile First Card Grid*/
+.card-grid{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six"
+    "seven"
+    "eight"
+    "nine";
+    align-items: stretch;
+    justify-items: center;
+    row-gap: 20px;
+}
+
+/*Med Screen Card Grid*/
+@media (min-width: 600px) and (max-width: 1000px){
+    .card-grid{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "one two"
+        "three four"
+        "five six"
+        "seven eight"
+        "nine ten";
+        align-items: stretch;
+        justify-items: center;
+        row-gap: 20px;
+    }
+}
+
+/*Large Screen Card Grid*/
+@media (min-width: 1001px){
+    .card-grid{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: auto;
+        grid-template-areas:
+        "one two three"
+        "four five six"
+        "seven eight nine";
+        align-items: stretch;
+        justify-items: stretch;
+        justify-content: space-evenly;
+        row-gap: 20px;
+    }
+}
+/* Card Element Styling */
+
+.blog-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.blog-card figure {
+    margin-bottom: 10px;
+}
+
+.card-image img{
+    width: 200px;
+    align-self: center;
+}
+
+.card-button{
+    background-color: #06377a;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Card Order for Grid */
+
+.card-one{
+    grid-area: one;
+}
+
+.card-two{
+    grid-area: two;
+}
+
+.card-three{
+    grid-area: three;
+}
+
+.card-four{
+    grid-area: four;
+}
