@@ -23,7 +23,7 @@ body {
 }
 
 header {
-    background-color: #06377a;
+    background-color: #F59A19;
     margin: 0px auto;
     padding-bottom: 20px;
     text-align: center;
@@ -36,7 +36,7 @@ button{
     padding: 15px 30px;
     font-family: "Heebo", Arial, Helvetica, sans-serif;
     font-size: 1em;
-    background: #CC7A08;
+    background: #06377A;
     color: white;
 }
 
