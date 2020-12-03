@@ -71,20 +71,6 @@ header{
 }
 
 /* 4. Article Styling for Blog Posts*/
-.blog-author {
-    display: flex;
-    flex-direction: row;
-}
-
-.blog-author figure {
-    width: 20%;
-}
-
-.blog-author p {
-    font-size: .75rem;
-    width: 70%;
-}
-
 
 .post-format{
     margin: 0 auto;
