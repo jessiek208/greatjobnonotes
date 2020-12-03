@@ -1,15 +1,20 @@
 /* Table of Contents
 
 1. Mobile/Medium Screens
-2. Regular Screens
+2. Regular & Large Screens
 3. Grid Component Styling and Assignment
 4. Article Styling for Blog Posts
 5. Author Credits Grid
 
 
 1. Mobile & Med Screens */
-@media (max-width: 900px){
+@media (max-width: 600px){
+    .blog-author{
+        width: 75%;
+    }
+}
 
+@media (max-width: 900px){
     .body-grid{
         display: grid;
         grid-template-rows: auto;
@@ -31,9 +36,8 @@
     }
 }
 
-/* 2. Regular Screen */
+/* 2. Regular & Large Screens */
 @media (min-width: 901px){
-
     .body-grid{
         display: grid;
         grid-template-rows: auto;
@@ -45,6 +49,12 @@
         align-items: stretch;
         justify-items: stretch;
         justify-content: stretch;
+    }
+}
+
+@media (min-width: 1180px){
+    .blog-author{
+        width: 50%;
     }
 }
 
