@@ -1,0 +1,47 @@
+.blog-author{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "photo sharing ."
+    "credits credits credits";
+    width: 60%;
+    padding-bottom: 10px;
+}
+
+.blog-author figure {
+    grid-area: photo;
+    width: 100px;
+    justify-self: start;
+}
+
+.sharing {
+    grid-area: sharing;
+    display: flex;
+    background-color: white;
+    width: 50%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: baseline;
+    justify-self: start;
+}
+
+.ln-button {
+    vertical-align: top !important;
+}
+
+.fb-share-button {
+    margin-bottom: 4px;
+}
+
+.author-info {
+    grid-area: credits;
+    justify-self: stretch;
+    margin-left: 7px;
+    padding-top: 5px;
+}
+
+.blog-author p {
+    font-size: .75rem;
+}
